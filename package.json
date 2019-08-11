@@ -20,10 +20,13 @@
     "@angular/platform-browser-dynamic": "~7.1.0",
     "@angular/router": "~7.1.0",
     "@ng-bootstrap/ng-bootstrap": "^4.2.1",
+    "ag-grid-angular": "^21.1.0",
+    "ag-grid-community": "^21.1.1",
     "bootstrap": "^4.3.1",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
+    "underscore": "^1.9.1",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {

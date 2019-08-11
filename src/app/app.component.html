@@ -1,2 +1,20 @@
 <master-header *ngIf="isUserLogged"></master-header>
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
+
+<ag-grid-angular
+    #myGrid
+    style="height: 500px;"
+    class="ag-theme-balham"
+
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    [gridOptions]="gridOptions"
+    [cacheOverflowSize]="cacheOverflowSize"
+    [maxConcurrentDatasourceRequests]="maxConcurrentDatasourceRequests"
+    [infiniteInitialRowCount]="infiniteInitialRowCount"
+    [pagination]=true
+
+    (gridReady)="onGridReady($event)"
+    (paginationChanged)="onPaginationChanged($event)"
+>
+</ag-grid-angular>

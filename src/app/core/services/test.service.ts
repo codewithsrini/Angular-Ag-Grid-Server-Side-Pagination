@@ -13,4 +13,8 @@ export class TestService {
   fetch() {
     return this.http.get('https://jsonplaceholder.typicode.com/todos/1');
   }
+
+  getUsers(params) {
+    return this.http.post('http//users', params);
+  }
 }
